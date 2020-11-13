@@ -26,6 +26,7 @@ public class DictationEngine : MonoBehaviour
     public UnityEngine.Events.UnityEvent OnUserStartedSpeaking;
 
     private bool isUserSpeaking;
+    public MySpawner spawner;
 
     void Start()
     {
@@ -95,6 +96,10 @@ public class DictationEngine : MonoBehaviour
     {
         Debug.LogFormat("Dictation result: {0}", text);
         if (ResultedText) ResultedText.text += text + "\n";
+        
+        if(text.Contains("ball")){
+            spawner.SpawnBall();
+        }
 
         
 

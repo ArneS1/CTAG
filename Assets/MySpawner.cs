@@ -8,7 +8,7 @@ public class MySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Spawn(ballPrefab);
+        
     }
 
     // Update is called once per frame
@@ -19,6 +19,11 @@ public class MySpawner : MonoBehaviour
 
     public void Spawn(GameObject gameObject){
         GameObject newObject = Instantiate(gameObject) as GameObject;
+        newObject.transform.position = this.transform.position;
+    }
+
+    public void SpawnBall(){
+        GameObject newObject = Instantiate(ballPrefab) as GameObject;
         newObject.transform.position = this.transform.position;
     }
 }

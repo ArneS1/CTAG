@@ -13,15 +13,14 @@ public class TextEvaluator : MonoBehaviour
     
     public string GetSpawnableFromText(string text)
     {
-        spawnableNames = MySpawner.Instance.GetSpawnableNames();
-        Debug.Log(spawnableNames);
-        //TODO check why null
+        spawnableNames = new List<string>(MySpawner.Instance.GetSpawnableNames());
         string name = "NULL";
         spawnableNames.ForEach(s => {
             if(text.Contains(s)){
             name = s;
         }
         });
+        Debug.Log("found: " + name);
         return name;
     }
 

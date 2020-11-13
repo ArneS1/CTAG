@@ -131,6 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6100290}
   - component: {fileID: 6100291}
+  - component: {fileID: 6100292}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -166,6 +167,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnables:
   - {fileID: 4125138203834400578, guid: 3f0d2affa23873c4eb1b6e008ce8ccbc, type: 3}
+--- !u!114 &6100292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6100289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a917b01b251e26c45beff4ab3747c859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &46943657
 GameObject:
   m_ObjectHideFlags: 0

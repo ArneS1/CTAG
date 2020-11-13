@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MySpawner : MonoBehaviour
+public sealed class MySpawner : MonoBehaviour
 {
     private List<GameObject> spawnables;
     private List<string> spawnableNames;
@@ -15,6 +15,16 @@ public class MySpawner : MonoBehaviour
 
     MySpawner()
     {
+        Debug.Log("created");
+    }
+
+    private void Awake() {
+        if (instance != null) {
+            Destroy(gameObject);
+        }else{
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     public static MySpawner Instance
@@ -75,14 +85,14 @@ public class MySpawner : MonoBehaviour
     }
 
     public List<string> GetSpawnableNames(){
-        return this.spawnableNames;
+        Debug.Log("spawnable Name 0:" + spawnableNames[0]);
+        return spawnableNames;
         //TODO check if not null
     }
 
-    public void SetData(List<GameObject> spawnables, List<string> spawnableNames){
-        this.spawnables = spawnables;
-        this.spawnableNames = spawnableNames;
+    public void SetData(List<GameObject> spawnablesList, List<string> spawnableNamesList){
+        spawnables = new List<GameObject>(spawnablesList);
+        spawnableNames = new List<string>(spawnableNamesList);
         Debug.Log("MYSPAWNER: data set");
-        //TODO check if not null
     }
 }

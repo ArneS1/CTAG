@@ -26,7 +26,7 @@ public class DictationEngine : MonoBehaviour
     public UnityEngine.Events.UnityEvent OnUserStartedSpeaking;
 
     private bool isUserSpeaking;
-    public MySpawner spawner;
+    private TextEvaluator textEvaluator;
 
     void Start()
     {
@@ -97,11 +97,13 @@ public class DictationEngine : MonoBehaviour
         Debug.LogFormat("Dictation result: {0}", text);
         if (ResultedText) ResultedText.text += text + "\n";
         
-        if(text.Contains("ball")){
-            spawner.SpawnBall();
-        }
+        int size = textEvaluator.GetSizeFromText(text);
+        string spawnable = textEvaluator.GetSpawnableFromText(text);
 
-        
+        if(spawnable != "NULL")
+        {
+            MySpawner.Instance.Spawn(spawnable, size);
+        }
 
         if (isUserSpeaking == true)
         {
@@ -124,6 +126,7 @@ public class DictationEngine : MonoBehaviour
     private void StartDictationEngine()
     {
         isUserSpeaking = false;
+        textEvaluator = new TextEvaluator();
 
         dictationRecognizer = new DictationRecognizer();
 

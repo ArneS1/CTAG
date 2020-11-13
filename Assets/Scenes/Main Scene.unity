@@ -167,6 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnables:
   - {fileID: 4125138203834400578, guid: 3f0d2affa23873c4eb1b6e008ce8ccbc, type: 3}
+  - {fileID: 5447717278665169165, guid: c6012f9292e533643b8eb9699b9c6195, type: 3}
 --- !u!114 &6100292
 MonoBehaviour:
   m_ObjectHideFlags: 0

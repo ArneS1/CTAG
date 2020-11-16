@@ -5,7 +5,7 @@ using UnityEngine;
 public sealed class MySpawner : MonoBehaviour
 {
     private List<GameObject> spawnables;
-    private List<string> spawnableNames;
+    private List<List<string>> spawnableNames;
 
     private static MySpawner instance = null;
     private static readonly object padlock = new object();
@@ -49,16 +49,16 @@ public sealed class MySpawner : MonoBehaviour
     public void Spawn(string name, int size){
         GameObject spawnable = null;
 
-        if(spawnableNames.Contains(name))
-        {
-            spawnable = spawnables[spawnableNames.IndexOf(name)];
-            GameObject newObject = Instantiate(spawnable) as GameObject;
-            newObject.transform.position = this.transform.position;
-            if( size >= 1 && size <= 3)
-            {
+        spawnableNames.ForEach(spawnableNamesList => {
+            if(spawnableNamesList.Contains(name)){
+                spawnable = spawnables[spawnableNames.IndexOf(spawnableNamesList)];
+                GameObject newObject = Instantiate(spawnable) as GameObject;
+                newObject.transform.position = this.transform.position;
+                if( size >= 1 && size <= 3){
                 newObject.transform.localScale = GetSizeVector(size);
+                }
             }
-        }
+        });
     }
 
     private Vector3 GetSizeVector(int size)
@@ -84,15 +84,15 @@ public sealed class MySpawner : MonoBehaviour
     return vector;
     }
 
-    public List<string> GetSpawnableNames(){
+    public List<List<string>> GetSpawnableNames(){
         Debug.Log("spawnable Name 0:" + spawnableNames[0]);
         return spawnableNames;
         //TODO check if not null
     }
 
-    public void SetData(List<GameObject> spawnablesList, List<string> spawnableNamesList){
+    public void SetData(List<GameObject> spawnablesList, List<List<string>> spawnableNamesList){
         spawnables = new List<GameObject>(spawnablesList);
-        spawnableNames = new List<string>(spawnableNamesList);
+        spawnableNames = new List<List<string>>(spawnableNamesList);
         Debug.Log("MYSPAWNER: data set");
     }
 }

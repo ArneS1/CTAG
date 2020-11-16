@@ -5,7 +5,7 @@ using UnityEngine;
 public class TextEvaluator : MonoBehaviour
 {
     // Start is called before the first frame update
-    private List<string> spawnableNames;
+    private List<List<string>> spawnableNames;
 
     public TextEvaluator()
     {
@@ -13,12 +13,14 @@ public class TextEvaluator : MonoBehaviour
     
     public string GetSpawnableFromText(string text)
     {
-        spawnableNames = new List<string>(MySpawner.Instance.GetSpawnableNames());
+        spawnableNames = new List<List<string>>(MySpawner.Instance.GetSpawnableNames());
         string name = "NULL";
-        spawnableNames.ForEach(s => {
-            if(text.Contains(s)){
-            name = s;
-        }
+        spawnableNames.ForEach(nameList => {
+            nameList.ForEach(spawnableName => {
+                if(text.Contains(spawnableName)){
+                name = spawnableName;
+                }
+            });
         });
         Debug.Log("found: " + name);
         return name;

@@ -5,20 +5,16 @@ using UnityEngine;
 public class Spawnables : MonoBehaviour
 {
     public List<GameObject> spawnables = null;
-    private List<string> spawnableNames;
+    private List<List<string>> spawnableNames;
     // Start is called before the first frame update
     void Start()
     {
-        spawnableNames = new List<string>();
+        spawnableNames = new List<List<string>>();
         spawnables.ForEach(s =>{
-            string name = s.ToString();
-            name = name.Replace(" (UnityEngine.GameObject)","");
-            name = name.ToLower();
-            Debug.Log("Spwanable " + name + " added.");
-            spawnableNames.Add(name);
+            List<string> keywords = new List<string>(s.GetComponent<SpawnableKeywords>().keywords);
+            spawnableNames.Add(keywords);
         });
         MySpawner.Instance.SetData(spawnables, spawnableNames);
-        //TODO check if not null
     }
 
     // Update is called once per frame

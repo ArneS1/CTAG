@@ -10,6 +10,8 @@ public sealed class MySpawner : MonoBehaviour
     private static MySpawner instance = null;
     private static readonly object padlock = new object();
 
+    public AudioSource audioSource = null;
+
     public void Start(){
     }
 
@@ -57,8 +59,15 @@ public sealed class MySpawner : MonoBehaviour
                 if( size >= 1 && size <= 3){
                 newObject.transform.localScale = GetSizeVector(size);
                 }
+                PlaySound(newObject);
             }
         });
+    }
+
+    private void PlaySound(GameObject gameObject)
+    {
+        Debug.Log("MySpawner: playing sound");
+        audioSource.PlayOneShot(gameObject.GetComponent<SpawnableKeywords>().GetAudioClip());
     }
 
     private Vector3 GetSizeVector(int size)

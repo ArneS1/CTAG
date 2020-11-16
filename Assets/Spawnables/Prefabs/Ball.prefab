@@ -204,3 +204,4 @@ MonoBehaviour:
   keywords:
   - ball
   - kugel
+  audioClip: {fileID: 8300000, guid: 2202735b18d2a8045a8f7f804b24a9bf, type: 3}

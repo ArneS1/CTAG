@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9140091064391984291}
   - component: {fileID: 8251490705020573318}
   - component: {fileID: 6847471960674881591}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plunger
   m_TagString: plunger
   m_Icon: {fileID: 0}
@@ -184,6 +184,18 @@ PrefabInstance:
     - target: {fileID: 1129760287473496, guid: b43257630abae854ca0c1214918e7343, type: 3}
       propertyPath: m_Name
       value: Plunger
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129760287473496, guid: b43257630abae854ca0c1214918e7343, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190018279192188, guid: b43257630abae854ca0c1214918e7343, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240138216265950, guid: b43257630abae854ca0c1214918e7343, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4076643822354392, guid: b43257630abae854ca0c1214918e7343, type: 3}
       propertyPath: m_LocalPosition.x

@@ -46,6 +46,7 @@ public class poempelReact : MonoBehaviour
             //TODO: Wasser ablassen
             //TODO: Level gewinnen
             poempelCount++;
+            Debug.Log("PÖMPELS: " + poempelCount);
         }
     }
 

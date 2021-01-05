@@ -57,7 +57,7 @@ public sealed class MySpawner : MonoBehaviour
                 GameObject newObject = Instantiate(spawnable) as GameObject;
                 newObject.transform.position = this.transform.position;
                 if( size >= 1 && size <= 3){
-                newObject.transform.localScale = GetSizeVector(size);
+                    newObject.transform.localScale = newObject.transform.localScale * GetSizeVector(size).x;
                 }
                 PlaySound(newObject);
             }

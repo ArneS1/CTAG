@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - plunger
+  - Fire
   layers:
   - Default
   - TransparentFX

@@ -20,6 +20,7 @@ public class PortalScript : MonoBehaviour
 
      private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Collision");
         if(other.gameObject.CompareTag("Player")){
             SceneManager.LoadScene("Level 2");
         }

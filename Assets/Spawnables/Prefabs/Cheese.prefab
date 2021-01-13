@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3428711609867984226}
   - component: {fileID: 142481702043683157}
   - component: {fileID: 6337811901781827400}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cheese
   m_TagString: cheese
   m_Icon: {fileID: 0}
@@ -164,17 +164,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2696024282288745146}
     m_Modifications:
+    - target: {fileID: 1015620686197194, guid: 9e67197f1a146e245876cb153e7385fd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1244937328963772, guid: 9e67197f1a146e245876cb153e7385fd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1268511459518578, guid: 9e67197f1a146e245876cb153e7385fd, type: 3}
       propertyPath: m_Name
       value: Cheese
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268511459518578, guid: 9e67197f1a146e245876cb153e7385fd, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1362038981276364, guid: 9e67197f1a146e245876cb153e7385fd, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1362038981276364, guid: 9e67197f1a146e245876cb153e7385fd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1408996524486898, guid: 9e67197f1a146e245876cb153e7385fd, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408996524486898, guid: 9e67197f1a146e245876cb153e7385fd, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4732421097043446, guid: 9e67197f1a146e245876cb153e7385fd, type: 3}
       propertyPath: m_LocalPosition.x

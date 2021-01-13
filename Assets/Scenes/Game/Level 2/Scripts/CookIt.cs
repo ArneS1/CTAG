@@ -13,6 +13,8 @@ public class CookIt : MonoBehaviour
     public GameObject fishFire;
     public GameObject eyeFire;
 
+    public GameObject potFire;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,13 @@ public class CookIt : MonoBehaviour
         
     }
 
+    private void killFires(){
+        bananaFire.SetActive(false);
+        fishFire.SetActive(false);
+        eyeFire.SetActive(false);
+        potFire.SetActive(false);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
 
@@ -35,21 +44,18 @@ public class CookIt : MonoBehaviour
         switch(other.gameObject.tag){
             case "banana":
                 banana = true;
+                killFires();
                 bananaFire.SetActive(true);
-                fishFire.SetActive(false);
-                eyeFire.SetActive(false);
                 break;
             case "fish":
                 fish = true;
+                killFires();
                 fishFire.SetActive(true);
-                bananaFire.SetActive(false);
-                eyeFire.SetActive(false);
                 break;
             case "eye":
                 eye = true;
+                killFires();
                 eyeFire.SetActive(true);
-                bananaFire.SetActive(false);
-                fishFire.SetActive(false);
                 break;
         }
         }

@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6183734653350659313}
   - component: {fileID: 9167301585954405463}
-  - component: {fileID: 1075315725009853972}
-  - component: {fileID: 6627829102510064927}
-  m_Layer: 0
+  - component: {fileID: 5011849858634233711}
+  - component: {fileID: 4142173909644689294}
+  m_Layer: 8
   m_Name: Ladle
   m_TagString: ladle
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ MonoBehaviour:
   - "l\xF6ffel"
   - spoon
   audioClip: {fileID: 0}
---- !u!54 &1075315725009853972
+--- !u!54 &5011849858634233711
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -68,7 +68,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6627829102510064927
+--- !u!114 &4142173909644689294
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,9 +152,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6183734653350659313}
     m_Modifications:
+    - target: {fileID: 1048025892510682, guid: 0b336b48330cca14ab09f4e0663c9ddc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096288793294800, guid: 0b336b48330cca14ab09f4e0663c9ddc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168501972220200, guid: 0b336b48330cca14ab09f4e0663c9ddc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1412177354231160, guid: 0b336b48330cca14ab09f4e0663c9ddc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1723047426331982, guid: 0b336b48330cca14ab09f4e0663c9ddc, type: 3}
       propertyPath: m_Name
       value: Ladle_1_Wood_LODGroup
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723047426331982, guid: 0b336b48330cca14ab09f4e0663c9ddc, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4615610422524322, guid: 0b336b48330cca14ab09f4e0663c9ddc, type: 3}
       propertyPath: m_LocalPosition.x

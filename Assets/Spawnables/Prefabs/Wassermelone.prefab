@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4705362731054414690}
   - component: {fileID: 1862512943966474060}
   - component: {fileID: 3609390399670321117}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wassermelone
   m_TagString: watermelone
   m_Icon: {fileID: 0}
@@ -171,13 +171,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: Watermelon
       objectReference: {fileID: 0}
+    - target: {fileID: 1228912776443452, guid: 67d272003e829744b87737100e2371ca, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1250112650367712, guid: 67d272003e829744b87737100e2371ca, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1250112650367712, guid: 67d272003e829744b87737100e2371ca, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1532259287124918, guid: 67d272003e829744b87737100e2371ca, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1624448696068898, guid: 67d272003e829744b87737100e2371ca, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624448696068898, guid: 67d272003e829744b87737100e2371ca, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900766090812714, guid: 67d272003e829744b87737100e2371ca, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4268894304585758, guid: 67d272003e829744b87737100e2371ca, type: 3}
       propertyPath: m_LocalPosition.y

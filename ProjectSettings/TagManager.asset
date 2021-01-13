@@ -26,8 +26,8 @@ TagManager:
   - 
   - IgnorePlayer
   - Player
-  - 
-  - 
+  - IgnorePlayerAndPot
+  - Pot
   - 
   - 
   - 

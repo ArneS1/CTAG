@@ -6,6 +6,15 @@ TagManager:
   tags:
   - plunger
   - Fire
+  - banana
+  - eye
+  - fish
+  - beer
+  - meat
+  - watermelone
+  - cheese
+  - lighter
+  - ladle
   layers:
   - Default
   - TransparentFX

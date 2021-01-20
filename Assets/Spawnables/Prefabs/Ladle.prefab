@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9167301585954405463}
   - component: {fileID: 5011849858634233711}
   - component: {fileID: 4142173909644689294}
+  - component: {fileID: 5535253782615531822}
   m_Layer: 8
   m_Name: Ladle
   m_TagString: ladle
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2655915326526157852}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.1532195, y: 0.0014921427, z: 0.026512384}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -145,6 +146,20 @@ MonoBehaviour:
   m_ThrowAngularVelocityScale: 1
   m_GravityOnDetach: 0
   m_RetainTransformParent: 1
+--- !u!136 &5535253782615531822
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2655915326526157852}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.09
+  m_Height: 0.16
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2805904278168393940
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -219,6 +234,11 @@ PrefabInstance:
     - target: {fileID: 4615610422524322, guid: 0b336b48330cca14ab09f4e0663c9ddc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 65386993673877310, guid: 0b336b48330cca14ab09f4e0663c9ddc,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b336b48330cca14ab09f4e0663c9ddc, type: 3}

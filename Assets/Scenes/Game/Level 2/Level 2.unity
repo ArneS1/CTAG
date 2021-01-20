@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17365063}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.519, z: 0}
+  m_LocalPosition: {x: 0, y: 0.666, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 1236104946}
@@ -164,7 +164,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 1.58
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &17365066
 MonoBehaviour:
@@ -1657,6 +1657,7 @@ GameObject:
   m_Component:
   - component: {fileID: 523008107}
   - component: {fileID: 523008108}
+  - component: {fileID: 523008109}
   m_Layer: 0
   m_Name: Stir4
   m_TagString: Untagged
@@ -1672,8 +1673,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523008106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0185, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.0185, y: 0, z: -0.0263}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_Children: []
   m_Father: {fileID: 337747792}
   m_RootOrder: 3
@@ -1687,9 +1688,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 523008106}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb4aef60163925d449c793c130f45158, type: 3}
+  m_Script: {fileID: 11500000, guid: 90031bc23cdf68c47b3128818f4f4bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ladle: 0
+--- !u!135 &523008109
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523008106}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &528535494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2599,7 +2614,7 @@ GameObject:
   - component: {fileID: 942574635}
   m_Layer: 9
   m_Name: XR Rig
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2813,7 +2828,7 @@ GameObject:
   - component: {fileID: 1135877693}
   m_Layer: 0
   m_Name: Camera Offset
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2908,6 +2923,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1187440716}
   - component: {fileID: 1187440717}
+  - component: {fileID: 1187440718}
   m_Layer: 0
   m_Name: Stir3
   m_TagString: Untagged
@@ -2923,8 +2939,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1187440715}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0185, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.0185, y: 0, z: -0.0202}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_Children: []
   m_Father: {fileID: 337747792}
   m_RootOrder: 2
@@ -2938,9 +2954,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1187440715}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb4aef60163925d449c793c130f45158, type: 3}
+  m_Script: {fileID: 11500000, guid: 90031bc23cdf68c47b3128818f4f4bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ladle: 0
+--- !u!135 &1187440718
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187440715}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1191675104 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1434627103891488, guid: 52d340ed9c2714c4f8aabf1f82df1b58,
@@ -2957,6 +2987,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1195168818}
   - component: {fileID: 1195168819}
+  - component: {fileID: 1195168820}
   m_Layer: 0
   m_Name: Stir2
   m_TagString: Untagged
@@ -2972,8 +3003,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195168817}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.0185, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.0185, z: -0.01679}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_Children: []
   m_Father: {fileID: 337747792}
   m_RootOrder: 1
@@ -2987,9 +3018,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1195168817}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb4aef60163925d449c793c130f45158, type: 3}
+  m_Script: {fileID: 11500000, guid: 90031bc23cdf68c47b3128818f4f4bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ladle: 0
+--- !u!135 &1195168820
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195168817}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1236104945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4537,6 +4582,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneToOpen: Main Scene
+--- !u!65 &1872749124
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872749122}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2, y: 4.23, z: 0.76}
+  m_Center: {x: 0, y: 2.14, z: 0}
 --- !u!1001 &1874445483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4616,6 +4674,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1886222449}
   - component: {fileID: 1886222450}
+  - component: {fileID: 1886222451}
   m_Layer: 0
   m_Name: Stir5
   m_TagString: Untagged
@@ -4631,8 +4690,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886222448}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0254}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_Children: []
   m_Father: {fileID: 337747792}
   m_RootOrder: 4
@@ -4646,9 +4705,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1886222448}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb4aef60163925d449c793c130f45158, type: 3}
+  m_Script: {fileID: 11500000, guid: 90031bc23cdf68c47b3128818f4f4bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ladle: 0
+--- !u!135 &1886222451
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886222448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1907181059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4728,6 +4801,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1985052010}
   - component: {fileID: 1985052011}
+  - component: {fileID: 1985052012}
   m_Layer: 0
   m_Name: Stir1
   m_TagString: Untagged
@@ -4743,8 +4817,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985052009}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0185, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.0185, z: -0.015}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_Children: []
   m_Father: {fileID: 337747792}
   m_RootOrder: 0
@@ -4758,9 +4832,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1985052009}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb4aef60163925d449c793c130f45158, type: 3}
+  m_Script: {fileID: 11500000, guid: 90031bc23cdf68c47b3128818f4f4bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ladle: 0
+--- !u!135 &1985052012
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985052009}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2019709395
 PrefabInstance:
   m_ObjectHideFlags: 0

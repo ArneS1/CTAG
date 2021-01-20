@@ -45,16 +45,19 @@ public class CookIt : MonoBehaviour
         switch(other.gameObject.tag){
             case "banana":
                 banana = true;
+                other.gameObject.SetActive(false);
                 killFires();
                 bananaFire.SetActive(true);
                 break;
             case "fish":
                 fish = true;
+                other.gameObject.SetActive(false);
                 killFires();
                 fishFire.SetActive(true);
                 break;
             case "eye":
                 eye = true;
+                other.gameObject.SetActive(false);
                 killFires();
                 eyeFire.SetActive(true);
                 break;

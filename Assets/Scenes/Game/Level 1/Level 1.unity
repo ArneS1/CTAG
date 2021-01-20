@@ -3098,6 +3098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca4129e5462000047a15acbf8c6b9b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneToOpen: Level 2
 --- !u!65 &8486765209450874999
 BoxCollider:
   m_ObjectHideFlags: 0

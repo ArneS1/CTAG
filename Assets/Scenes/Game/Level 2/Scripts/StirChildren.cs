@@ -20,8 +20,8 @@ public class StirChildren : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("lighter")){
-           //PotFire.SetActive(true);
+        if(other.gameObject.CompareTag("ladle")){
+           this.gameObject.SetActive(false);
         }
     }
 }

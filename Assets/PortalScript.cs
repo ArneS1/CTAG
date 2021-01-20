@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class PortalScript : MonoBehaviour
 {
+
+    public string SceneToOpen;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,7 @@ public class PortalScript : MonoBehaviour
     {
         Debug.Log("Collision");
         if(other.gameObject.CompareTag("Player")){
-            SceneManager.LoadScene("Level 2");
+            SceneManager.LoadScene(SceneToOpen);
         }
     }
 }

@@ -12,8 +12,8 @@ public class CookIt : MonoBehaviour
     public GameObject bananaFire;
     public GameObject fishFire;
     public GameObject eyeFire;
-
     public GameObject potFire;
+    public GameObject StirCollider;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +40,8 @@ public class CookIt : MonoBehaviour
     if(other.gameObject.CompareTag("lighter")){
         fire = true;
     }
-    if (fire) {
+    if (fire) 
+    {
         switch(other.gameObject.tag){
             case "banana":
                 banana = true;
@@ -58,6 +59,10 @@ public class CookIt : MonoBehaviour
                 eyeFire.SetActive(true);
                 break;
         }
+        }
+        if(banana && fish && eye)
+        {
+            StirCollider.SetActive(true);
         }
     }
 
